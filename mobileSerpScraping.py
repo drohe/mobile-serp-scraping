@@ -8,7 +8,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from queryArray import queries #This is a .py file, named queryList, with queries = [] and your list of queries (as strings) inside the array
+from queryArray import queries #This is a .py file with queries = [] and your list of queries (as strings) inside the array
 
 ### START THE SET UP YOUR CHROME DRIVER
 
