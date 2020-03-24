@@ -35,9 +35,6 @@ f.writerow(["Query","Interesting Finds\?", "Finds Links"])
 browser.get('https://www.google.com')
 browser.set_window_size(360,640)
 
-### CREATE A DATA LIBRARY FOR THE JSON DUMP AT THE END
-data = {}
-
 ### BEGIN THE LOOP THROUGH EACH QUERY OF YOUR QUERIES ARRAY
 for query in queries:
   elem = browser.find_element_by_name("q") #Find the input field to have Selenium type in the query
