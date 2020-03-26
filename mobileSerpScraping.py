@@ -39,10 +39,10 @@ browser.set_window_size(360,640)
 for query in queries:
   elem = browser.find_element_by_name("q") #Find the input field to have Selenium type in the query
   elem.clear()
-  elem.send_keys(query) #Selenium
+  elem.send_keys(query) #Selenium types in the query
   elem.send_keys(Keys.RETURN)
   element = WebDriverWait(browser, 10).until(
-        EC.presence_of_element_located((By.ID, "botstuff"))
+        EC.presence_of_element_located((By.ID, "botstuff")) # the #botstuff loads at the bottom of the SERP, so this helps to ensure the page is fully loaded before scraping
     )
   body = browser.find_elements_by_tag_name('body')[0] #This is used for screenshots further down
 
